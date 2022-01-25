@@ -102,7 +102,7 @@ const Connect = () => {
           extra={
             <Switch
               checkedChildren={<SyncOutlined spin />}
-              unCheckedChildren={'Price feed Off'}
+              unCheckedChildren={'Pyth'}
               onChange={getPythData}
             />
           }
@@ -119,6 +119,7 @@ const Connect = () => {
             </>
           )}{' '}
           <Tooltip title="Price" placement="right">
+            {/* Can we make it more explicit what each of these items are? It's fairly obvious once you look at the code, but it would be nice if each of their labels on the UI also said price, confidence interval, and exponent */}
             <Statistic value={price} prefix={<DollarCircleFilled />} />
           </Tooltip>{' '}
           <Tooltip title="Confidence Interval" placement="right">
